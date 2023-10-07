@@ -5,7 +5,7 @@ pipeline {
   }
   environment {
     HEROKU_API_KEY = credentials('heroku-api-key')
-    IMAGE_NAME = 'baronix/jenkins-example-react'
+    IMAGE_NAME = 'baronix/roismatola'
     IMAGE_TAG = 'latest'
     APP_NAME = 'roismatola'
   }
