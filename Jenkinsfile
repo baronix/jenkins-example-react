@@ -31,7 +31,7 @@ pipeline {
     stage('Release the image') {
       steps {
         sh '''
-          heroku container:release web --app=$APP_NAME
+          heroku container:push web --app=$APP_NAME
         '''
       }
     }
