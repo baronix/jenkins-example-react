@@ -7,7 +7,7 @@ RUN npm ci
 
 COPY public/ public
 COPY src/ src
-RUN npm run dev
+RUN npm run build
 
 FROM httpd:alpine
 WORKDIR /usr/local/apache2/htdocs
