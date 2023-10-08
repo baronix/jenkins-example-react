@@ -7,7 +7,7 @@ RUN npm ci
 
 COPY public/ public
 COPY src/ src
-RUN npm install -g heroku
+RUN npm run dev
 
 FROM httpd:alpine
 WORKDIR /usr/local/apache2/htdocs
